@@ -150,7 +150,7 @@ module "vpc" {
 
 module "vpc_cni_irsa" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
-  version = "5.32.0"
+  version = "5.39.1"
 
   role_name             = upper("VPC-CNI-IRSA-${var.cluster_name}")
   attach_vpc_cni_policy = true
@@ -171,7 +171,7 @@ module "vpc_cni_irsa" {
 
 module "aws_ebs_csi_driver" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
-  version = "5.32.0"
+  version = "5.39.1"
 
   role_name = upper("EBS-CSI-DRIVER-${var.cluster_name}")
 
@@ -333,7 +333,7 @@ EOT
 
 module "cert_manager" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
-  version = "5.32.0"
+  version = "5.39.1"
 
   role_name = "cert-manager-${var.cluster_name}"
   role_policy_arns = {
@@ -383,7 +383,7 @@ EOT
 
 module "external_dns" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
-  version = "5.32.0"
+  version = "5.39.1"
 
   role_name = "external-dns-${var.cluster_name}"
   role_policy_arns = {
