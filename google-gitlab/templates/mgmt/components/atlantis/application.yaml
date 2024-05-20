@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://runatlantis.github.io/helm-charts
     chart: atlantis
-    targetRevision: 4.11.2
+    targetRevision: 4.25.0
     helm:
       values: |-
         statefulSet:
