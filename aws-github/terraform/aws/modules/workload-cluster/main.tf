@@ -30,7 +30,7 @@ module "iam_node_group_role" {
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "19.10.0"
+  version = "20.14.0"
 
   cluster_name                   = var.cluster_name
   cluster_version                = local.cluster_version
