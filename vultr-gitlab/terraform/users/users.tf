@@ -16,7 +16,7 @@ terraform {
   required_providers {
     gitlab = {
       source  = "gitlabhq/gitlab"
-      version = "15.8.0"
+      version = "17.1.0"
     }
     vault = {
       source = "hashicorp/vault"

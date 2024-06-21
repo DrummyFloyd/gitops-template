@@ -17,7 +17,7 @@ terraform {
     }
     gitlab = {
       source  = "gitlabhq/gitlab"
-      version = "3.20.0"
+      version = "17.1.0"
     }
     vault = {
       source = "hashicorp/vault"
